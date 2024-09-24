@@ -1,0 +1,27 @@
+{
+  "header": [
+    {
+      "title": "Añadir Empleado",
+      "icon": "Add",
+      "route": "/add-employee"
+    }
+  ],
+  "body": [
+    {
+      "title": "Registrar pago",
+      "icon": "PointOfSale",
+      "route": "/"
+    },
+    {
+      "title": "Reportes",
+      "icon": "Assessment",
+      "dropdown": [
+        {
+          "title": "Por día",
+          "icon": "DateRange",
+          "route": "/by-date"
+        }
+      ]
+    }
+  ]
+}

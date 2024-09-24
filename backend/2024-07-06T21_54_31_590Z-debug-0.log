@@ -1,0 +1,74 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.6.7
+2 info using node@v18.17.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 5ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 6ms
+10 timing config:load:file:/www/65e89c27c4471/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 2ms
+12 timing config:load:file:/usr/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 2ms
+15 timing config:load Completed in 19ms
+16 timing npm:load:configload Completed in 19ms
+17 timing npm:load:mkdirpcache Completed in 4ms
+18 timing npm:load:mkdirplogs Completed in 4ms
+19 verbose title npm install npm@10.8.1
+20 verbose argv "install" "--global" "npm@10.8.1"
+21 timing npm:load:setTitle Completed in 2ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 6ms
+24 verbose logfile logs-max:10 dir:/www/65e89c27c4471/.npm/_logs/2024-07-06T21_54_31_590Z-
+25 verbose logfile /www/65e89c27c4471/.npm/_logs/2024-07-06T21_54_31_590Z-debug-0.log
+26 timing npm:load:logFile Completed in 17ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 56ms
+30 timing config:load:flatten Completed in 2ms
+31 silly logfile done cleaning log files
+32 http fetch GET 200 https://registry.npmjs.org/npm 748ms (cache hit)
+33 timing arborist:ctor Completed in 2ms
+34 timing idealTree:init Completed in 9ms
+35 timing idealTree:userRequests Completed in 2ms
+36 silly idealTree buildDeps
+37 silly fetch manifest npm@10.8.1
+38 http fetch GET 200 https://registry.npmjs.org/npm 259ms (cache hit)
+39 silly placeDep ROOT npm@10.8.1 OK for:  want: 10.8.1
+40 timing idealTree:#root Completed in 318ms
+41 timing idealTree:node_modules/npm Completed in 0ms
+42 timing idealTree:buildDeps Completed in 321ms
+43 timing idealTree:fixDepFlags Completed in 1ms
+44 timing idealTree Completed in 337ms
+45 timing reify:loadTrees Completed in 578ms
+46 timing reify:diffTrees Completed in 7ms
+47 silly reify mark retired [ '/usr/lib/node_modules/npm', '/usr/bin/npm', '/usr/bin/npx' ]
+48 silly reify moves {
+48 silly reify   '/usr/lib/node_modules/npm': '/usr/lib/node_modules/.npm-qUIFSsiV',
+48 silly reify   '/usr/bin/npm': '/usr/bin/.npm-CxSgn0z2',
+48 silly reify   '/usr/bin/npx': '/usr/bin/.npx-akSQqeWh'
+48 silly reify }
+49 timing reify:rollback:retireShallow Completed in 1ms
+50 timing command:install Completed in 1434ms
+51 verbose stack Error: EROFS: read-only file system, rename '/usr/lib/node_modules/npm' -> '/usr/lib/node_modules/.npm-qUIFSsiV'
+52 verbose cwd /www/65e89c27c4471/test.isapps.com.ar/public
+53 verbose Linux 6.2.6-arch1-1
+54 verbose node v18.17.0
+55 verbose npm  v9.6.7
+56 error code EROFS
+57 error syscall rename
+58 error path /usr/lib/node_modules/npm
+59 error dest /usr/lib/node_modules/.npm-qUIFSsiV
+60 error errno -30
+61 error rofs EROFS: read-only file system, rename '/usr/lib/node_modules/npm' -> '/usr/lib/node_modules/.npm-qUIFSsiV'
+62 error rofs Often virtualized file systems, or other file systems
+62 error rofs that don't support symlinks, give this error.
+63 verbose exit -30
+64 timing npm Completed in 1804ms
+65 verbose unfinished npm timer reify 1720302872789
+66 verbose unfinished npm timer reify:retireShallow 1720302873377
+67 verbose code -30
+68 error A complete log of this run can be found in: /www/65e89c27c4471/.npm/_logs/2024-07-06T21_54_31_590Z-debug-0.log
